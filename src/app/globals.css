@@ -7,9 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
-.header {
+.banner {
   background: rgb(34, 193, 195);
   background: linear-gradient(
       0deg,
@@ -20,7 +21,6 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-
   position: relative;
 }
 
@@ -172,19 +172,21 @@ p {
 }
 .community {
   padding: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   padding-top: 70px;
 }
 .community-content-contr,
 .community-img-contr {
-  max-width: 50%;
+  width: 50%;
   overflow: hidden;
 }
+
 .community-contr {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .MuiAccordion-root::before {
@@ -192,4 +194,159 @@ p {
 }
 .community-content-contr {
   padding: 10px;
+}
+.community-title > h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #5e5e5e !important;
+  margin-bottom: 0px !important;
+}
+.community-separator {
+  background-color: #000;
+  height: 2px;
+  width: 50%;
+  margin-block: 15px;
+}
+.community-description {
+  width: 70%;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  font-size: 2.4rem;
+  margin-top: 10px;
+  line-height: 3rem;
+}
+
+.community-img-contr {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.contact-contr {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-block: 10px;
+  font-weight: 500;
+  background-color: #2b5447;
+  border-top: 1px solid white;
+}
+.footer > p {
+  color: #dddddd;
+}
+.contact-group {
+  height: 220px;
+}
+.contact-group,
+.link-group,
+.company-icon {
+  width: 20%;
+  padding: 5px;
+}
+.contact {
+  padding-block: 50px;
+  padding-inline: 30px;
+  background-color: #2b5447;
+}
+.company-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 350px;
+}
+.contact-title {
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
+.contact-content,
+.contact-content > div > p {
+  color: #f8f8f8;
+}
+.phone-no {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.email-contr {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+}
+.email-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.email {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.link-group {
+  height: 220px !important;
+  color: #f8f8f8;
+  font-size: 1.4rem;
+  padding-left: 100px;
+}
+.quick-group {
+  height: 220px;
+  width: 18%;
+  padding: 5px;
+}
+.quick-title {
+  margin-bottom: 20px;
+}
+.quick-title,
+.privacy,
+.condition {
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.privacy > p,
+.condition > p {
+  color: #f8f8f8;
+  margin-bottom: 15px;
+}
+.quick-link {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+.hor-nav-section {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding-block: 15px;
+  background-color: #00000050;
+  z-index: 2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+.nav-btn-contr {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 450px;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
 }
